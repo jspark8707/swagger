@@ -1,10 +1,10 @@
-1.로컬 swagger 어플리케이션 구성  
-2.git 레포지토리 푸시  
-3.jenkins-git 레포지토리 연계 및 빌드  
-4.kt클라우드 내 어플리케이션 구성  
-5.docker 이미지 생성 및 빌드  
-6.docker 레포지토리 연계  
-7.로컬환경에 docker 이미지 pull 및 구동  
+- 1.로컬 swagger 어플리케이션 구성  
+- 2.git 레포지토리 푸시  
+- 3.jenkins-git 레포지토리 연계 및 빌드  
+- 4.kt클라우드 내 어플리케이션 구성  
+- 5.docker 이미지 생성 및 빌드  
+- 6.docker 레포지토리 연계  
+- 7.로컬환경에 docker 이미지 pull 및 구동  
 
 ### H2 DB JDBC URL
 ```
