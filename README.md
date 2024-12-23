@@ -37,8 +37,8 @@ tail -f /var/lib/jenkins/workspace/swagger/logs/output.log
 #swagger 종료
 ps aux | grep 'api-0.0.1-SNAPSHOT.jar' | grep -v grep | awk '{print $2}' | xargs kill
 ```
+### Docker 연동 
 ```bash
-##################################################################
 #Dockerfile 생성,푸시,빌드
 cd /var/lib/jenkins/workspace/swagger
 mvn clean package
