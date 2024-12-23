@@ -8,7 +8,7 @@
 
 ### H2 DB JDBC URL
 ```
-- jdbc:h2:mem:testdb
+jdbc:h2:mem:testdb
 ```
 
 ### GitHub 연동 및 Jenkins 설정
