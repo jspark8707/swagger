@@ -6,7 +6,7 @@
 * 6.docker 레포지토리 연계
 * 7.로컬환경에 docker 이미지 pull 및 구동
 
-
+### GitHub 연동 및 Jenkins 설정
 ```bash
 # Git 초기화
 git init
@@ -37,7 +37,7 @@ tail -f /var/lib/jenkins/workspace/swagger/logs/output.log
 #swagger 종료
 ps aux | grep 'api-0.0.1-SNAPSHOT.jar' | grep -v grep | awk '{print $2}' | xargs kill
 ```
-### Docker 연동 
+### Docker 빌드 및 DockerHub 연동 
 ```bash
 #Dockerfile 생성,푸시,빌드
 cd /var/lib/jenkins/workspace/swagger
