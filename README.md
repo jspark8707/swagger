@@ -6,6 +6,9 @@
 * 6.docker 레포지토리 연계
 * 7.로컬환경에 docker 이미지 pull 및 구동
 
+### H2 DB JDBC URL
+- jdbc:h2:mem:testdb  
+
 ### GitHub 연동 및 Jenkins 설정
 ```bash
 # Git 초기화
@@ -55,4 +58,4 @@ docker tag swagger-image-kt jongsungpark/swagger-image-kt
 docker push jongsungpark/swagger-image-kt
 
 ```
-jdbc:h2:mem:testdb
+
