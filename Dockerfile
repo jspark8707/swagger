@@ -1,5 +1,5 @@
 # 1. 기본 이미지를 설정합니다.
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jdk-slim
 
 # 2. 어플리케이션 jar 파일을 이미지에 복사합니다.
 ARG JAR_FILE=target/api-0.0.1-SNAPSHOT.jar
