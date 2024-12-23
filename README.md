@@ -7,7 +7,9 @@
 * 7.로컬환경에 docker 이미지 pull 및 구동
 
 ### H2 DB JDBC URL
-- jdbc:h2:mem:testdb  
+```
+- jdbc:h2:mem:testdb
+```
 
 ### GitHub 연동 및 Jenkins 설정
 ```bash
