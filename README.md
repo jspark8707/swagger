@@ -60,4 +60,5 @@ docker tag swagger-image-kt jongsungpark/swagger-image-kt
 docker push jongsungpark/swagger-image-kt
 
 ```
-
+### Slack 연동 
+- https://thejspark.slack.com/services/B085XR40N95?added=1
