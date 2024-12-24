@@ -61,4 +61,7 @@ docker push jongsungpark/swagger-image-kt
 
 ```
 ### Slack 연동 
+```bash
+git pull origin main --rebase
+```
 - https://thejspark.slack.com/services/B085XR40N95?added=1
