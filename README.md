@@ -74,3 +74,8 @@ chmod -R 755 /var/lib/jenkins/workspace/swagger/target
 ![image](https://github.com/user-attachments/assets/806dc4f2-0926-4a37-8d83-a10983839720)
 
 - https://thejspark.slack.com/services/B085XR40N95?added=1
+
+### 🔑Jenkins 암호 확인
+```bash
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
