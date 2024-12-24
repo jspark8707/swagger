@@ -79,3 +79,4 @@ chmod -R 755 /var/lib/jenkins/workspace/swagger/target
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
+- id : jspark
