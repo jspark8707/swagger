@@ -63,5 +63,8 @@ docker push jongsungpark/swagger-image-kt
 ### Slack 연동 
 ```bash
 git pull origin main --rebase
+#Slack 연동 후 권한문제 발생하여 jar 실행 안됨
+sudo chown -R jenkins:jenkins /var/lib/jenkins/workspace/swagger
+chmod -R 755 /var/lib/jenkins/workspace/swagger/target
 ```
 - https://thejspark.slack.com/services/B085XR40N95?added=1
