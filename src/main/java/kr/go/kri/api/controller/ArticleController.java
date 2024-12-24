@@ -3,6 +3,7 @@ package kr.go.kri.api.controller;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import jakarta.validation.Valid;
 import kr.go.kri.api.domain.Article;
 import kr.go.kri.api.service.ArticleService;
 import org.slf4j.Logger;
@@ -40,17 +41,17 @@ public class ArticleController {
         return this.articleService.findById(id);
     }
 
-    @Operation(summary = "전임교원 등록", description = "전임교원을 생성합니다.")
+    @Operation(summary = "전임교원 등록", description = "전임교원을 등록합니다.")
     @ApiResponse(responseCode = "201", description = "성공적으로 전임교원 생성 반환", content = @Content)
     @PostMapping
-    public Article create(@RequestBody Article article) {
+    public Article create(@org.springframework.web.bind.annotation.RequestBody Article article) {
         return this.articleService.create(article);
     }
 
-    @Operation(summary = "전임교원 수정", description = "기존 전임교원의 정보를 수정합니다.")
+    @Operation(summary = "전임교원 수정", description = "전임교원의 정보를 수정합니다.")
     @ApiResponse(responseCode = "200", description = "성공적으로 전임교원 수정 반환", content = @Content)
     @PutMapping("/{id}")
-    public Article update(@PathVariable Long id, @RequestBody Article article) {
+    public Article update(@PathVariable Long id, @org.springframework.web.bind.annotation.RequestBody Article article) {
         article.setId(id); // ID 설정 (기존 자원 수정)
         return this.articleService.update(article);
     }
