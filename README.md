@@ -37,7 +37,7 @@ git branch -M main
 git push -u origin main
 
 #swagger log
-tail -f /var/lib/jenkins/workspace/swagger/output.log
+tail -f /var/lib/jenkins/workspace/swagger/logs/output.log
 
 #swagger 종료
 ps aux | grep 'api-0.0.1-SNAPSHOT.jar' | grep -v grep | awk '{print $2}' | xargs kill

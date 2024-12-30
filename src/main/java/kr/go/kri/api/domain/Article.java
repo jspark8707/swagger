@@ -9,15 +9,11 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonPropertyOrder({"id", "title", "content"})
 public class Article {
     @Schema(description = "Article의 고유 id", example = "1")
-    @JsonProperty("id")
     private Long id;
     @Schema(description = "Article의 제목", example = "title")
-    @JsonProperty("title")
     private String title;
     @Schema(description = "Article의 내용", example = "content")
-    @JsonProperty("content")
     private String content;
 }
