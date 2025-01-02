@@ -16,3 +16,11 @@
 
 ## 물리 아키텍처 Sizing
 ![image](https://github.com/user-attachments/assets/65825edb-94aa-485d-bb01-284850ce1b3b)
+
+## On-Site Cloud
+- 정부·지자체 내부에 kt cloud를 임차하여 구축·운영할 수 있는 서비스
+- ![image](https://github.com/user-attachments/assets/62adea07-d39a-40c2-a363-c2af1ce6e359)
+
+## DaaS(VDI)
+- 공공기관 내부 또는 kt cloud CDC(Cloud Data Center)에 VDI 환경 구성·구축하는 서비스
+- ![image](https://github.com/user-attachments/assets/2742b905-1153-499d-8edc-80f7fc6ba264)
