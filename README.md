@@ -53,6 +53,8 @@ docker build -t swagger-image-kt .
 
 #도커 실행
 docker run -p 8080:8080 swagger-image-kt
+docker run -d -p 8080:8080 swagger-image-kt
+
 
 #도커로그인 후 이미지 push
 docker login -u parkjs8707@gmail.com
