@@ -1,79 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-
-    <jmxConfigurator/>
-    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
-    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
-    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
-
-    <!-- STDOUT appender -->
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern>
-                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %50.50C (%file:%line\) - %msg%n
-            </Pattern>
-        </layout>
+    <!-- 예: 콘솔Appender -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n</pattern>
+        </encoder>
     </appender>
 
-    <!-- application Logger -->
-    <logger name="com.kt.edu" level="DEBUG" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
+    <!-- log4jdbc가 SQL을 찍는 패키지 -->
+    <logger name="jdbc" level="DEBUG"/>
+    <logger name="jdbc.sqlonly" level="DEBUG"/>
+    <logger name="jdbc.sqltiming" level="DEBUG"/>
+    <logger name="jdbc.audit" level="DEBUG"/>
+    <logger name="jdbc.resultsettable" level="TRACE"/>
 
-    <!-- springframework Loggers -->
-    <logger name="org.springframework.core" level="ERROR" additivity="false" >
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="org.springframework.beans" level="ERROR" additivity="false" >
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="org.springframework.context" level="ERROR" additivity="false" >
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="org.springframework.web" level="ERROR" additivity="false" >
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="org.springframework.tx" level="ERROR" additivity="false" >
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="org.springframework.jdbc" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <!-- jdbc loggers -->
-    <logger name="jdbc.sqltiming" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="jdbc.sqlonly" level="ERROR"  additivity="false">
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="jdbc.resultsettable" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="org.apache.ibatis" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <logger name="net.sf.log4jdbc.log.slf4j" level="ERROR" additivity="false">
-        <appender-ref ref="STDOUT" />
-    </logger>
-
-    <!-- connection pool -->
-    <logger name="com.zaxxer.hikari" level="INFO" additivity="false">
-        <appender-ref ref="STDOUT"/>
-    </logger>
-
-    <!-- root -->
-    <root level="ERROR">
-        <appender-ref ref="STDOUT" />
+    <root level="INFO">
+        <appender-ref ref="CONSOLE" />
     </root>
-
 </configuration>
