@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @OpenAPIDefinition(
         info = @Info(
-                title = "한국연구자정보(KRI) RESTful API Documentation.",
+                title = "한국연구자정보(KRI) RESTful API Documentation!!!",
                 version = "1.0",
                 description = "한국연구자정보(KRI) 클라우드 네이티브 표준 API"
         )
